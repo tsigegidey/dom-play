@@ -1,1 +1,72 @@
-<h1></h1>
+<!DOCTYPE html>
+   <head>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <h1 class="dom">DOM Play</h1>
+       <h2 id="me">A Javascript example by Tsige Gebretsadek</h2>
+       <h3 id="title">This is a JavaScript example in which we used data attributes to identify characters when you click on character. </h3>
+       <h3>Below is an example of 10 legendary best jokes and quotes from the famous tv series, Friends. </h3>
+       <div class="example1">
+        <h2>I will be there for you, when the rain starts to pour, I'll be there for you... </h2>
+        </div>
+       <img id= "friends"src= "https://m.media-amazon.com/images/M/MV5BZDc2NTg5YWUtZGZlZC00Y2VmLTgwZjEtZDUxM2QyNGRmYjZlXkEyXkFqcGdeQWFybm8@._V1_QL75_UX500_CR0,0,500,281_.jpg" width= "500" height="300">
+       <div id="play">
+           <p><span data-actor="ross">Ross: “Pivot! Pivot! Pivot! Pivot! Pivot!” (while trying to lift his sofa up a flight of stairs) </span></p>
+           <p><span data-actor="chandler">Chandler: “Shut up! Shut up! Shut up!”</span></p>
+           <p><span data-actor="phoebe">Phoebe: “Look I had a hard life, my mother was killed by a drug dealer.”</span></p>
+           <p><span data-actor="monica">Monica: “Phoebe, your mom killed herself.”</span></p>
+           <p><span data-actor="phoebe">Pheobe: “She was a drug dealer.” </span></p>
+           <p><span data-actor="ross">Ross: “We were on a break!” </span></p>
+           <p><span data-actor="chandler">Chandler: “Oh, my God! If you say that one more time, I’m going to break up with you!”</span></p>
+           <p><span data-actor="joey">Joey: “If he doesn’t like you, this is all a moo point.” </span></p>
+           <p><span data-actor="rachel">Rachel: “A moo point?” </span></p>
+           <p><span data-actor="joey">Joey: “Yeah. It’s like a cow’s opinion. It just doesn’t matter. It’s moo.”  </span></p>
+           
+        </div>
+
+       <div class= "frame">
+
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/K2fZb9tDXKE" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+
+       </div>
+
+        <footer>
+            <small> &copy; 2020 - <span class = "copyright"> copyright goes here </span> , All Rights Reserved ~
+            <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+            <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+            </small>
+          </footer>
+
+
+       <script>
+          
+           const spans = document.querySelectorAll('div#play span');
+ 
+           for(const mySpan of spans){
+               mySpan.addEventListener('click',function(ev){
+                    //alert (mySpan.dataset.actor);
+                    highlightActor(mySpan.dataset.actor);
+               });
+           }
+         
+
+          
+           function highlightActor(myActor){
+
+               for(const mySpan of spans){
+                if(myActor == mySpan.dataset.actor){
+                    mySpan.style.backgroundColor = 'yellow';
+                }else{
+                    mySpan.style.backgroundColor = 'white';
+                }
+            } 
+
+            }
+       </script>
+   </body>
+</html>

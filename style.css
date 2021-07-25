@@ -1,0 +1,74 @@
+           
+        .dom {
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             text-align: center;
+         }
+
+         h3 {
+            
+             font-family: 'Times New Roman', Times, serif;
+             text-align: center;
+        }
+
+         #me {
+             text-align: center;
+         }
+       
+         #title {
+             font-family:'Times New Roman', Times, serif;
+             font-style: italic;
+             font-size: medium;
+             text-align: center;
+         }
+
+         #friends {
+        
+             margin-right: auto;
+             background-color:pink;
+             display: inline-block;
+             border: 6px solid aqua;
+             margin-left: 500px;
+
+         }
+
+         #play {
+             margin-left: 500px;
+
+         }
+
+         .example1 {
+            height: 50px;	
+            overflow: hidden;
+            position: relative;
+            font-size:20px;
+            margin-bottom: 50px;
+
+        
+        animation: example1 7s infinite;
+    }
+
+         @keyframes example1 {
+        0%   { 
+          transform: translateX(200%); 		
+        }
+      100% { 
+         transform: translateX(0%); 
+       }
+          }
+
+              
+          .frame {
+            display:flex;
+            justfiy-content:center;
+            padding-left:170px;
+            margin-top:50px;
+            margin-left: 300px;
+            
+         
+         }   
+
+         .copyright {
+            margin-bottom: 900px;
+            text-align: center;
+         }
